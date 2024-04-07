@@ -29,7 +29,7 @@ export default function Hero() {
         <div>
           <Link
             href='/'
-            className='inline-flex items-center px-3 py-4 border border-white text-white text-balance gap-[10px] mt-[58px]'
+            className='inline-flex hover:bg-white hover:text-[#9747FF] transition-colors items-center px-3 py-4 border border-white text-white text-balance gap-[10px] mt-[58px]'
           >
             <FiDownload />
             Download Resume
