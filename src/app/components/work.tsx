@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { LiaLongArrowAltRightSolid } from 'react-icons/lia';
 
-import NextImage from '@/components/NextImage';
-
 export default function Work() {
   return (
     <>
@@ -42,15 +40,10 @@ export default function Work() {
             <div>
               <Link
                 href='/'
-                className='inline-flex hover:bg-[#9747FF] hover:fill-white hover:border-white hover:text-white items-center px-10 py-4 border border-[#9747FF] text-[#9747FF] text-balance gap-[10px] mt-[48px]'
+                className='inline-flex hover:bg-[#9747FF] transition-colors hover:fill-white hover:border-white hover:text-white items-center px-10 py-4 border border-[#9747FF] text-[#9747FF] text-balance gap-[10px] mt-[48px]'
               >
                 SEE MY WORK
-                <NextImage
-                  src='/images/arrow-right.png'
-                  width={76}
-                  height={2}
-                  alt='arrow-right'
-                />
+                <LiaLongArrowAltRightSolid className='text-2xl' />
               </Link>
             </div>
           </div>

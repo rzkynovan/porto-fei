@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import * as React from 'react';
+import { LiaLongArrowAltRightSolid } from 'react-icons/lia';
 import { MdOutlineTouchApp } from 'react-icons/md';
 import '@/lib/env';
 
@@ -114,18 +115,13 @@ export default function HomePage() {
               />
             </div>
           </div>
-          <div className='flex'>
+          <div className='flex justify-center'>
             <Link
               href='/'
-              className='inline-flex mx-auto hover:bg-[#9747FF] hover:fill-white hover:border-white hover:text-white items-center px-10 py-4 border border-[#9747FF] text-[#9747FF] text-balance gap-[10px] mt-[48px]'
+              className='inline-flex hover:bg-[#9747FF] transition-colors hover:fill-white hover:border-white hover:text-white items-center px-10 py-4 border border-[#9747FF] text-[#9747FF] text-balance gap-[10px] mt-[48px]'
             >
               SEE MY WORK
-              <NextImage
-                src='/images/arrow-right.png'
-                width={76}
-                height={2}
-                alt='arrow-right'
-              />
+              <LiaLongArrowAltRightSolid className='text-2xl' />
             </Link>
           </div>
         </section>
