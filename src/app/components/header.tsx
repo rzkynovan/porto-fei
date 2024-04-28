@@ -3,15 +3,21 @@ import Link from 'next/link';
 import React from 'react';
 
 import NextImage from '@/components/NextImage';
-
-export default function Header() {
+type params = {
+  NoBackgroundColor: boolean;
+};
+export default function Header({ NoBackgroundColor }: params) {
   const [navOpen, setNavOpen] = React.useState(false);
   const [navOnScroll, setNavOnScroll] = React.useState(false);
   React.useCallback(() => {
     setNavOnScroll(false);
   }, []);
   return (
-    <header className='fixed w-full top-0 z-30 bg-[#9747FF]'>
+    <header
+      className={` ${
+        NoBackgroundColor ? 'bg-white' : 'bg-[#9747FF]'
+      } fixed w-full top-0 z-30`}
+    >
       <nav
         className={`flex w-full justify-between ${
           navOnScroll ? 'bg-white' : ''
@@ -26,7 +32,11 @@ export default function Header() {
           />
         </div>
 
-        <div className='w-1/4 bg-[#69EAAC] flex justify-end lg:pr-[100px] py-[24px]'>
+        <div
+          className={` ${
+            NoBackgroundColor ? 'bg-white' : 'bg-[#69EAAC]'
+          } w-1/4 flex justify-end lg:pr-[100px] py-[24px]`}
+        >
           <NextImage
             src='/images/burger.png'
             width={57}
