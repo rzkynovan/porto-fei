@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { FiDownload } from 'react-icons/fi';
 
 import NextImage from '@/components/NextImage';
@@ -27,13 +26,14 @@ export default function Hero() {
           </p>
         </div>
         <div>
-          <Link
-            href='/'
+          <a
+            download='CVFaisal.pdf'
+            href='/file/CVFaisal.pdf'
             className='inline-flex hover:bg-white hover:text-[#9747FF] transition-colors items-center px-3 py-4 border border-white text-white text-balance gap-[10px] mt-[58px]'
           >
             <FiDownload />
             Download Resume
-          </Link>
+          </a>
         </div>
       </div>
       <div>

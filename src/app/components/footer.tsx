@@ -16,7 +16,7 @@ export default function Footer() {
         till the time’s up.
       </p>
       <div className='flex gap-5 items-center ml-2 mt-[60px]'>
-        <Link href='/'>
+        <Link href='https://www.instagram.com/feidesignn/' target='_blank'>
           <NextImage
             src='/images/ig-white.png'
             width={63}
@@ -24,7 +24,7 @@ export default function Footer() {
             alt='ig'
           />
         </Link>
-        <Link href='/'>
+        <Link href='https://www.behance.net/feidesignn' target='_blank'>
           <NextImage
             src='/images/be-white.png'
             width={63}
@@ -32,7 +32,7 @@ export default function Footer() {
             alt='ig'
           />
         </Link>
-        <Link href='/'>
+        <Link href='www.linkedin.com/in/faisal-adnan-7869a9194' target='_blank'>
           <NextImage
             src='/images/ln-white.png'
             width={63}
@@ -40,7 +40,7 @@ export default function Footer() {
             alt='ig'
           />
         </Link>
-        <Link href='/'>
+        <Link href='mailto:faisalbrighton95@gmail.com'>
           <NextImage
             src='/images/email-white.png'
             width={63}
@@ -48,7 +48,7 @@ export default function Footer() {
             alt='ig'
           />
         </Link>
-        <Link href='/'>
+        <Link href='https://wa.me/6287837196362' target='_blank'>
           <NextImage
             src='/images/wa-white.png'
             width={63}

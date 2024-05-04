@@ -24,12 +24,14 @@ export default function Header({ NoBackgroundColor }: params) {
         }`}
       >
         <div className='lg:pl-[100px] py-[24px]'>
-          <NextImage
-            src='/images/logo.png'
-            width={200}
-            height={44}
-            alt='Logo'
-          />
+          <Link href='/'>
+            <NextImage
+              src='/images/logo.png'
+              width={200}
+              height={44}
+              alt='Logo'
+            />
+          </Link>
         </div>
 
         <div
@@ -71,7 +73,10 @@ export default function Header({ NoBackgroundColor }: params) {
             </Link>
           </li>
           <li>
-            <Link href='/' className='px-3 py-2 text-xl text-[#9747FF]'>
+            <Link
+              href='/portofolio/ui'
+              className='px-3 py-2 text-xl text-[#9747FF]'
+            >
               Work of UI/UX
             </Link>
           </li>
@@ -85,7 +90,10 @@ export default function Header({ NoBackgroundColor }: params) {
               Let’s Chat me
             </div>
             <div className='flex gap-5 items-center ml-2'>
-              <Link href='/'>
+              <Link
+                href='https://www.instagram.com/feidesignn/'
+                target='_blank'
+              >
                 <NextImage
                   src='/images/ig.png'
                   width={40}
@@ -93,7 +101,7 @@ export default function Header({ NoBackgroundColor }: params) {
                   alt='ig'
                 />
               </Link>
-              <Link href='/'>
+              <Link href='https://www.behance.net/feidesignn' target='_blank'>
                 <NextImage
                   src='/images/be.png'
                   width={40}
@@ -101,7 +109,10 @@ export default function Header({ NoBackgroundColor }: params) {
                   alt='ig'
                 />
               </Link>
-              <Link href='/'>
+              <Link
+                href='www.linkedin.com/in/faisal-adnan-7869a9194'
+                target='_blank'
+              >
                 <NextImage
                   src='/images/linkedin.png'
                   width={40}
@@ -109,7 +120,7 @@ export default function Header({ NoBackgroundColor }: params) {
                   alt='ig'
                 />
               </Link>
-              <Link href='/'>
+              <Link href='mailto:faisalbrighton95@gmail.com'>
                 <NextImage
                   src='/images/email.png'
                   width={40}

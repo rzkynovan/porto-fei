@@ -21,7 +21,7 @@ export default function Work() {
             </p>
             <div>
               <Link
-                href='/'
+                href='/portofolio/ui'
                 className='inline-flex hover:bg-[#9747FF] transition-colors hover:fill-white hover:border-white hover:text-white items-center px-10 py-4 border border-[#9747FF] text-[#9747FF] text-balance gap-[10px] mt-[48px]'
               >
                 SEE MY WORK
@@ -39,7 +39,7 @@ export default function Work() {
             </p>
             <div>
               <Link
-                href='/'
+                href='/portofolio/graphic'
                 className='inline-flex hover:bg-[#9747FF] transition-colors hover:fill-white hover:border-white hover:text-white items-center px-10 py-4 border border-[#9747FF] text-[#9747FF] text-balance gap-[10px] mt-[48px]'
               >
                 SEE MY WORK

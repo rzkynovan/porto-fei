@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import NextImage from '@/components/NextImage';
 
 import Footer from '@/app/components/footer';
@@ -10,6 +12,7 @@ export default function UIPage() {
       img: '/images/portofolio/ui/banner/kano-medic.jpg',
       width: 920,
       height: 546,
+      href: '/portofolio/ui/details/kano-medic',
     },
     {
       name: 'Bagong-Information-System',
@@ -41,12 +44,14 @@ export default function UIPage() {
           <div className=' w-full justify-center grid grid-flow-row auto-rows-max gap-4 mt-[50px]'>
             {banner.map((e, i) => (
               <div key={i} className=' border cursor-pointer mt-8'>
-                <NextImage
-                  src={e.img}
-                  width={e.width}
-                  height={e.height}
-                  alt={e.name}
-                />
+                <Link href={`${e.href}`}>
+                  <NextImage
+                    src={e.img}
+                    width={e.width}
+                    height={e.height}
+                    alt={e.name}
+                  />
+                </Link>
               </div>
             ))}
           </div>
